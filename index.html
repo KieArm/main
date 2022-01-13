@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/913ca59cd2.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -24,6 +24,14 @@
     <nav class="navbar-main">
         <div class="navbar-container">
             <a class="navbar-logo active" href="#hero">KA</a>
+            <div class="scroll-icons">
+              <a href="https://github.com/KieArm" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="assets/wcqr.png" target="_blank"><i id="button" class="fab fa-weixin"></i></a>
+              <div id="tooltip" role="tooltip">
+                <img src="./assets/wcqr.png" width="200px" height="200px" alt="">
+              </div>
+              <a href="https://wa.me/8615648925234?text=Portfolio%20Click" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
           <div class="navlink-wrapper">
             <div class="navlink-container">
               <a data-aos="fade-left" data-aos-delay="1000" class="nav-link" href="#story"><span>STORY</span></a>
@@ -52,18 +60,6 @@
           </div>
           <div class="cv">
             <a href="kieran-armbrecht.pdf" target="_blank">CV</a>
-          </div>
-        </div>
-        <div class="scroll-container">
-          <div class="scroll">
-            <div class="scroll-icons">
-              <a href="https://github.com/KieArm" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-              <a href="https://wa.me/8615648925234?text=Portfolio%20Click" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
-              <i id="button" class="fab fa-weixin fa-lg"></i>
-              <div id="tooltip" role="tooltip">
-                <img src="./assets/wcqr.png" width="200px" height="200px" alt="">
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -287,7 +283,7 @@
           </div>
         </div>
       </section>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>

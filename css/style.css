@@ -43,7 +43,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 50px;
+  height: 60px;
   z-index: 3;
 }
 @media only screen and (max-width: 1200px) {
@@ -52,25 +52,10 @@ body {
     transform: none;
   }
 }
-.navbar-main a {
-  font-size: 24px;
-  font-family: "Monoton", cursive;
-  font-weight: 400;
-  text-decoration: none;
-  color: #EBEDF1;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media only screen and (max-width: 1200px) {
-  .navbar-main a {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .navbar-main a {
-    font-size: 1.1rem;
-    padding-right: 0px;
-  }
+
+.navlink-wrapper {
+  display: flex;
+  margin: 0 0 0 auto;
 }
 
 .navbar-logo:hover {
@@ -89,7 +74,24 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+}
+.navbar-container .navbar-logo {
+  font-size: 24px;
+  font-family: "Monoton", cursive;
+  font-weight: 400;
+  text-decoration: none;
+  color: #EBEDF1;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-container .navbar-logo {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar-container .navbar-logo {
+    font-size: 1.1rem;
+  }
 }
 
 .navlink-container {
@@ -97,6 +99,10 @@ body {
   padding: 10px;
 }
 .navlink-container a {
+  color: #EBEDF1;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 }
@@ -124,6 +130,20 @@ body {
 .navlink-container a.active span::after {
   width: 100%;
   left: 0;
+}
+
+.scroll-icons a {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+.scroll-icons i {
+  color: white;
+  transition: 0.3s;
+}
+.scroll-icons i:hover {
+  transform: scale(1.4);
 }
 
 #hero {
@@ -385,42 +405,6 @@ body {
 }
 .call-to-action .cv:hover a {
   color: black;
-}
-
-.scroll-container {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  max-width: 1440px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  margin-bottom: 10px;
-  z-index: 3;
-}
-@media only screen and (max-width: 700px) {
-  .scroll-container {
-    display: none;
-  }
-}
-.scroll-container a {
-  text-decoration: none;
-}
-.scroll-container i {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  color: white;
-  transition: 0.3s;
-}
-.scroll-container i:hover {
-  transform: scale(1.5);
-}
-.scroll-container .scroll-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #story {

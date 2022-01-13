@@ -8,7 +8,7 @@ const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
 
 const popperInstance = Popper.createPopper(button, tooltip, {
-    placement: 'right',
+    placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
