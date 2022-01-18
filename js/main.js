@@ -69,28 +69,3 @@ const spyScrolling = ( ) => {
     } 
 }
 spyScrolling( );
-
-// GlideJS - Projects
-const glideOptions = {
-    type: "carousel",
-    perView: 3,
-    startAt: 1,
-    focusAt: 'center',
-    gap: 10,
-    breakpoints: {
-        1024: {
-            perView: 2,
-            startAt: 1,
-            focusAt: 1,
-            gap: 5
-        },
-        600: {
-            perView: 1,
-            startAt: 1,
-            focusAt: 1,
-            gap: 0,          
-        }
-    }
-
-};
-new Glide('.glide', glideOptions).mount()
