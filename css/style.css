@@ -398,12 +398,12 @@ body {
   border: 1px solid rgba(235, 237, 241, 0.5);
   clip-path: polygon(20% 0, 100% 0, 100% 50%, 80% 100%, 0 100%, 0 50%);
   border-radius: 5px;
-  transition: all ease-in-out 0.5s;
 }
 .call-to-action .hire:hover {
   background: linear-gradient(219deg, var(--color-1) 19%, var(--color-2) 20%, var(--color-2) 39%, var(--color-3) 40%, var(--color-3) 59%, var(--color-4) 60%, var(--color-4) 79%, var(--color-5) 80%);
   cursor: pointer;
   border: none;
+  transition: 0.4s;
 }
 
 .story {
@@ -475,6 +475,9 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 }
 .story .story-card .story-row {
   display: flex;
@@ -507,6 +510,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   color: rgba(235, 237, 241, 0.8);
   padding: 0;
   margin: 0;
@@ -566,7 +570,7 @@ body {
   width: max-content;
   padding: 0;
   margin: 0 15px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: "Oswald";
   background: -moz-linear-gradient(130deg, #13e2da 0%, #9055ff 100%);
@@ -579,7 +583,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   #work h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 10px 10px;
   }
 }
@@ -600,6 +604,9 @@ body {
   width: 400px;
   object-fit: cover;
   transition: ease-in-out 0.4s;
+  box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 }
 #work .work-card img:hover {
   transform: scale(1.5);
@@ -713,6 +720,9 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 }
 @media only screen and (max-width: 700px) {
   #projects .projects-card {
@@ -730,6 +740,9 @@ body {
   width: 300px;
   border-radius: 5px;
   object-fit: cover;
+  box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 }
 #projects .projects-card .project-item .project-text {
   width: 250px;
@@ -758,30 +771,46 @@ body {
   margin: 10px 0px;
 }
 
-#contact {
+.contact {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 1200px;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
 }
 @media only screen and (max-width: 700px) {
-  #contact {
+  .contact {
     height: auto;
     padding-bottom: 20px;
     scroll-snap-align: none;
   }
 }
+.contact h1 {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 150px 0;
+  font-family: "Oswald";
+  background: linear-gradient(219deg, var(--color-1) 19%, transparent 19%, transparent 20%, var(--color-2) 20%, var(--color-2) 39%, transparent 39%, transparent 40%, var(--color-3) 40%, var(--color-3) 59%, transparent 59%, transparent 60%, var(--color-4) 60%, var(--color-4) 79%, transparent 79%, transparent 80%, var(--color-5) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media only screen and (max-width: 700px) {
+  .contact h1 {
+    font-size: 2rem;
+  }
+}
 
 .contact-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 80vh;
-  width: 80vw;
+  height: 80%;
+  width: 80%;
   color: white;
 }
 @media only screen and (max-width: 1200px) {
@@ -843,7 +872,6 @@ body {
 }
 @media only screen and (max-width: 700px) {
   .contact-section .contact-left .contact-info h2 {
-    padding-bottom: 30px;
     font-size: 2rem;
   }
 }
@@ -904,18 +932,24 @@ body {
 }
 .contact-section button {
   cursor: pointer;
-  font-size: 1.1em;
-  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-family: "Oswald";
+  letter-spacing: 0.1rem;
   color: rgba(235, 237, 241, 0.5);
   border: none;
-  width: 150px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   text-decoration: none;
   background-color: transparent;
   border-radius: 5px;
   box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px) saturate(80%);
+  -webkit-backdrop-filter: blur(2px) saturate(80%);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   transition: 0.3s;
 }
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
@@ -925,6 +959,7 @@ body {
 }
 .contact-section button:hover {
   color: #ebedf1;
+  transform: scale(1.1);
 }
 .contact-section form {
   display: flex;
@@ -933,10 +968,14 @@ body {
   width: 80%;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px) saturate(80%);
+  -webkit-backdrop-filter: blur(2px) saturate(80%);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 @media only screen and (max-width: 1200px) {
   .contact-section form {
