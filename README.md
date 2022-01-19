@@ -10,5 +10,4 @@ JavaScript
 External JavaScript Libraries Used:
 
 AOS, 
-Popper,
-Glide
+Popper
