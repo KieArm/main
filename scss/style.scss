@@ -158,6 +158,10 @@ body {
         text-decoration: none;
         font-size: 1.3rem;
         padding: 0 10px;
+
+        @media only screen and (max-width: 700px) {
+            font-size: 1rem;
+        }
     }
 
     i {
@@ -248,7 +252,7 @@ body {
 
 // Glitch Animation
 
-    .myname:hover {
+    .myname {
         transform: scaleX(var(--scale, 1));
         animation: glitch-p 11s infinite alternate;
 
@@ -696,6 +700,10 @@ body {
         width: 70%;
         padding: 50px 0px;
 
+        @media only screen and (max-width: 700px) {
+            width: 90%;
+        }
+
         img {
             border: 2px solid rgba(15, 15, 15, 0.2);
             border-radius: 10px;
@@ -711,7 +719,6 @@ body {
                 z-index: 999;
                 overflow: visible;
             }
-
         }
 
         .work-row {
@@ -722,6 +729,10 @@ body {
             justify-content: space-between;
             padding: 20px 0;
 
+            @media only screen and (max-width: 700px) {
+                flex-direction: column;
+            }
+
             .left {
                 display: flex;
                 flex-direction: column;
@@ -730,9 +741,26 @@ body {
                 max-width: 500px;
                 padding-bottom: 10px;
 
+                @media only screen and (max-width: 700px) {
+                    max-width: 325px;
+                    margin: 0 auto;
+                }
+
                 span {
                     margin: 5px 0 0 0;
                     color: #e83611;
+                }
+            }
+
+            .right {
+                @media only screen and (max-width: 700px) {
+                    margin: 0 auto;
+                }
+
+                img {
+                    @media only screen and (max-width: 700px) {
+                        width: 300px;
+                    }
                 }
             }
         }
@@ -745,6 +773,10 @@ body {
             justify-content: space-between;
             padding: 20px 0;
 
+            @media only screen and (max-width: 700px) {
+                flex-direction: column-reverse;
+            }
+
             .right {
                 display: flex;
                 flex-direction: column;
@@ -753,9 +785,26 @@ body {
                 max-width: 500px;
                 padding-bottom: 10px;
 
+                @media only screen and (max-width: 700px) {
+                    max-width: 325px;
+                    margin: 0 auto;
+                }
+
                 span {
                     margin: 5px 0 0 0;
                     color: #2a9a9f;
+                }
+            }
+
+            .left {
+                @media only screen and (max-width: 700px) {
+                    margin: 0 auto;
+                }
+
+                img {
+                    @media only screen and (max-width: 700px) {
+                        width: 300px;
+                    }
                 }
             }
         }        
@@ -767,10 +816,6 @@ body {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             font-size: 1.2rem;
-
-            @media only screen and (max-width: 1200px) {
-                margin: 10px;
-            }
     
             @media only screen and (max-width: 700px) {
                 margin: 0;
@@ -785,6 +830,11 @@ body {
             font-weight: 400;
             font-size: 1.3rem;
             color: rgba(235, 237, 241, 0.8);
+
+            @media only screen and (max-width: 700px) {
+                margin: 0;
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -862,6 +912,12 @@ body {
                     box-shadow: -9px 9px 30px 0px rgba(0,0,0,0.75);
                     -webkit-box-shadow: -9px 9px 30px 0px rgba(0,0,0,0.75);
                     -moz-box-shadow: -9px 9px 30px 0px rgba(0,0,0,0.75);
+                    transition: ease-in-out 0.4s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        
+                    }
                 }
             }
 

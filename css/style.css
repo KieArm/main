@@ -140,6 +140,11 @@ body {
   font-size: 1.3rem;
   padding: 0 10px;
 }
+@media only screen and (max-width: 700px) {
+  .scroll-icons a {
+    font-size: 1rem;
+  }
+}
 .scroll-icons i {
   color: white;
   transition: 0.3s;
@@ -213,11 +218,11 @@ body {
     font-size: 3em;
   }
 }
-#hero .myname:hover {
+#hero .myname {
   transform: scaleX(var(--scale, 1));
   animation: glitch-p 11s infinite alternate;
 }
-#hero .myname:hover::before, #hero .myname:hover::after {
+#hero .myname::before, #hero .myname::after {
   --f-size: 25;
   --f-unit: 1vmin;
   --f: calc(var(--f-size) * var(--f-unit));
@@ -238,10 +243,10 @@ body {
   background-color: transparent;
   clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
 }
-#hero .myname:hover::before {
+#hero .myname::before {
   animation: glitch-b 2.7s infinite alternate-reverse;
 }
-#hero .myname:hover::after {
+#hero .myname::after {
   animation: glitch-a 4.1s infinite alternate;
 }
 
@@ -598,6 +603,11 @@ body {
   width: 70%;
   padding: 50px 0px;
 }
+@media only screen and (max-width: 700px) {
+  #work .work-card {
+    width: 90%;
+  }
+}
 #work .work-card img {
   border: 2px solid rgba(15, 15, 15, 0.2);
   border-radius: 10px;
@@ -621,6 +631,11 @@ body {
   justify-content: space-between;
   padding: 20px 0;
 }
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row {
+    flex-direction: column;
+  }
+}
 #work .work-card .work-row .left {
   display: flex;
   flex-direction: column;
@@ -629,9 +644,25 @@ body {
   max-width: 500px;
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row .left {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+}
 #work .work-card .work-row .left span {
   margin: 5px 0 0 0;
   color: #e83611;
+}
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row .right {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row .right img {
+    width: 300px;
+  }
 }
 #work .work-card .work-row-2 {
   display: flex;
@@ -641,6 +672,11 @@ body {
   justify-content: space-between;
   padding: 20px 0;
 }
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row-2 {
+    flex-direction: column-reverse;
+  }
+}
 #work .work-card .work-row-2 .right {
   display: flex;
   flex-direction: column;
@@ -649,9 +685,25 @@ body {
   max-width: 500px;
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row-2 .right {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+}
 #work .work-card .work-row-2 .right span {
   margin: 5px 0 0 0;
   color: #2a9a9f;
+}
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row-2 .left {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #work .work-card .work-row-2 .left img {
+    width: 300px;
+  }
 }
 #work .work-card p {
   display: flex;
@@ -660,11 +712,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
-}
-@media only screen and (max-width: 1200px) {
-  #work .work-card p {
-    margin: 10px;
-  }
 }
 @media only screen and (max-width: 700px) {
   #work .work-card p {
@@ -679,6 +726,12 @@ body {
   font-weight: 400;
   font-size: 1.3rem;
   color: rgba(235, 237, 241, 0.8);
+}
+@media only screen and (max-width: 700px) {
+  #work .work-card a {
+    margin: 0;
+    font-size: 1rem;
+  }
 }
 
 #projects {
@@ -743,6 +796,10 @@ body {
   box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
+  transition: ease-in-out 0.4s;
+}
+#projects .projects-card .project-item .project-img img:hover {
+  transform: scale(1.2);
 }
 #projects .projects-card .project-item .project-text {
   width: 250px;
