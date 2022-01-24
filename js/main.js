@@ -2,7 +2,6 @@
 AOS.init({
     disable: 'mobile'
 });
-
 // Popper Tooltip
 const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
@@ -20,23 +19,15 @@ const popperInstance = Popper.createPopper(button, tooltip, {
 });
 
 function show() {
-    // Make the tooltip visible
     tooltip.setAttribute('data-show', '');
-
-    // Enable the event listeners
     popperInstance.setOptions({
         modifiers: [{ name: 'eventListeners', enabled: true }],
     });
-
-    // Update its position
     popperInstance.update();
 }
 
 function hide() {
-    // Hide the tooltip
     tooltip.removeAttribute('data-show');
-
-    // Disable the event listeners
     popperInstance.setOptions({
         modifiers: [{ name: 'eventListeners', enabled: false }],
     });
@@ -52,7 +43,6 @@ showEvents.forEach(event => {
 hideEvents.forEach(event => {
     button.addEventListener(event, hide);
 });
-
 // Navbar Update on Scroll Position
 const spyScrolling = ( ) => {
     const sections = document.querySelectorAll( '.scroll-bg' );
