@@ -6,11 +6,6 @@
 * {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    // scroll-snap-type: y mandatory;
-
-    @media only screen and (max-width: 1200px) {
-        scroll-snap-type: none;
-    }
 }
 
 :root{
@@ -19,6 +14,7 @@
     --color-3: #f1b211;
     --color-4: #e83611;
     --color-5: #f9002f;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -79,7 +75,7 @@ body {
 
     .navbar-logo {
         font-size: 1.5rem;
-        font-family: 'Monoton', cursive;
+        font-family: 'Monoton';
         font-weight: 400;
         text-decoration: none;
         color: #EBEDF1;
@@ -137,7 +133,6 @@ body {
         var(--color-4) 60%, var(--color-4) 79%,
         transparent 79%, transparent 80%, 
         var(--color-5) 80%);
-        // background-color: #EBEDF1;
         transition: all ease-in-out .4s;
     }
 
@@ -235,8 +230,7 @@ body {
         font-size: 7em;
         font-weight: 400;
         letter-spacing: 0.3em; 
-        font-family: 'Monoton', cursive;
-        // text-shadow: 0 13.36px 8.896px rgba(235, 237, 241, 0.2),0 -2px 1px #fff;
+        font-family: 'Monoton';
 
         @media only screen and (max-width: 1200px) {
             font-size: 5rem;
@@ -282,9 +276,6 @@ body {
             
             text-shadow: calc(var(--left) * -3em) 0 .02em #69BE28, 
                          calc(var(--left) * -6em) 0 .02em #ff00e1;
-                        //  calc(var(--left) * -5em) 0 .02em var(--color-1),
-                        //  calc(var(--left) * -6em) 0 .02em var(--color-3),
-                        //  calc(var(--left) * -7em) 0 .02em var(--color-5);
             
             background-color: transparent;
             clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
@@ -418,7 +409,6 @@ body {
     flex-direction: row;
 
     a {
-        // font-family: 'Roboto', sans-serif;
         font-family: "Oswald";
         font-size: 0.9rem;
         text-decoration: none;
@@ -1049,7 +1039,7 @@ body {
             }
             
             h2 {
-                font-family: 'Monoton', cursive;
+                font-family: 'Monoton';
                 font-size: 3em;
                 font-weight: 400;
                 margin: 0;

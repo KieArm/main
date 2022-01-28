@@ -10,11 +10,6 @@
   scrollbar-width: none;
   /* Firefox */
 }
-@media only screen and (max-width: 1200px) {
-  * {
-    scroll-snap-type: none;
-  }
-}
 
 :root {
   --color-1: #186cb8;
@@ -22,6 +17,7 @@
   --color-3: #f1b211;
   --color-4: #e83611;
   --color-5: #f9002f;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -78,7 +74,7 @@ body {
 }
 .navbar-container .navbar-logo {
   font-size: 1.5rem;
-  font-family: "Monoton", cursive;
+  font-family: "Monoton";
   font-weight: 400;
   text-decoration: none;
   color: #EBEDF1;
@@ -204,7 +200,7 @@ body {
   font-size: 7em;
   font-weight: 400;
   letter-spacing: 0.3em;
-  font-family: "Monoton", cursive;
+  font-family: "Monoton";
 }
 @media only screen and (max-width: 1200px) {
   #hero h1 {
@@ -919,7 +915,7 @@ body {
   }
 }
 .contact-section .contact-left .contact-info h2 {
-  font-family: "Monoton", cursive;
+  font-family: "Monoton";
   font-size: 3em;
   font-weight: 400;
   margin: 0;
