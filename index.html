@@ -1,254 +1,288 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/913ca59cd2.js" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>| Web Developer</title>
   </head>
   <body>
     <nav class="navbar-main">
-        <div class="navbar-container">
-            <a class="navbar-logo active" href="#hero">KA</a>
-            <div class="scroll-icons">
-              <a href="https://github.com/KieArm" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="assets/wcqr.png" target="_blank"><i id="button" class="fab fa-weixin"></i></a>
-              <div id="tooltip" role="tooltip">
-                <img src="./assets/wcqr.png" width="200px" height="200px" alt="">
-              </div>
-              <a href="https://wa.me/8615648925234?text=Portfolio%20Click" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          <div class="navlink-wrapper">
-            <div class="navlink-container">
-              <a data-aos="fade-left" data-aos-delay="1000" class="nav-link" href="#story"><span>STORY</span></a>
-              <a data-aos="fade-left" data-aos-delay="1250" class="nav-link" href="#work"><span>WORK</span></a>
-              <a data-aos="fade-left" data-aos-delay="1500" class="nav-link" href="#projects"><span>PROJECTS</span></a>
-              <a data-aos="fade-left" data-aos-delay="1750" class="nav-link" href="#contact"><span>CONTACT</span></a>
-            </div>
+      <div class="navbar-container">
+        <a class="navbar-logo active" href="#hero">KA</a>
+        <div class="social-icons">
+          <a href="https://github.com/KieArm" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="assets/wcqr.png" target="_blank"><i id="button" class="fab fa-weixin"></i></a>
+          <div id="tooltip" role="tooltip">
+            <img src="./assets/wcqr.png" width="200px" height="200px" alt="" />
+          </div>
+          <a href="https://wa.me/8615648925234?text=Portfolio%20Click" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+        <div class="navlink-wrapper">
+          <div class="navlink-container">
+            <a data-aos="fade-left" data-aos-delay="1000" class="nav-link" href="#story"><span>STORY</span></a>
+            <a data-aos="fade-left" data-aos-delay="1250" class="nav-link" href="#work"><span>WORK</span></a>
+            <a data-aos="fade-left" data-aos-delay="1500" class="nav-link" href="#projects"><span>PROJECTS</span></a>
+            <a data-aos="fade-left" data-aos-delay="1750" class="nav-link" href="#contact"><span>CONTACT</span></a>
           </div>
         </div>
+      </div>
     </nav>
-      
-      <section class="hero scroll-bg" id="hero">
-        <div class="hero-text" data-aos="zoom-in" data-aos-mirror="true" data-aos-duration="500">
-          <div class="left" data-aos="fade-right" data-aos-mirror="true" data-aos-duration="700" data-aos-delay="500">
-            <p>HI, I'M</p>
-          </div>
-          <h1 class="myname" data-text="KIERAN">KIERAN</h1>
-          <div class="right" data-aos="fade-left" data-aos-mirror="true" data-aos-duration="700" data-aos-delay="500">
-            <p>A WEB DEVELOPER</p>
-          </div>
-        </div>
-        <div class="call-to-action" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1000" data-aos-delay="800">
-          <div class="explore">
-            <a href="#story">EXPLORE</a>
-          </div>
-          <div class="hire">
-            <a href="#contact">CONTACT</a>
-          </div>
-        </div>
-      </section>
 
-      <section class="story">
-          <h1 id="story" class="scroll-bg" data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
-          <div class="story-card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="story-row">
-              <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">About Me</h2>
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">I am a British expatriate who has been living and working in China for over 10 years, during which I have gained extensive knowledge of China's culture, traditions and people, along with many wonderful stories to share.</p>
-            </div>  
-            <div class="story-row">
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">Originally I came here with only a year or two in mind, travelling and experiencing life in another country. However after numerous promotions I ended up staying quite a bit longer and found myself getting married.</p>
-            </div>
-            <div class="story-row">
-              <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">Web Skills</h2>
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">A self-taught web developer using HTML, CSS, SCSS and JavaScript. Eagerly seeking opportunities to learn modern frameworks/libraries, currently exploring Figma, Bootstrap*, and React*.</p>
-            </div>
-            <div class="story-icons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2400">
-              <img src="assets/html5.png" alt="">
-              <img src="assets/css3.png" alt="">
-              <img src="assets/javascript.png" alt="">
-              <img src="assets/github.png" alt="">
-              <img src="assets/figma.png" alt="">
-              <img src="assets/bootstrap.png" alt="">*
-              <img src="assets/react.png" alt="">*
-            </div>
-            <div class="story-row">
-              <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2800">Availability</h2>
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2800">Unfortunately the political situation and events of the last few years have led to an uncertain future. As such I will return to England at the end of July 2022 and I am available to work remotely until that time. Relocation within the UK is also possible for any prospective employers.</p>
-            </div>
-          </div>
-      </section>
+    <section class="hero scroll-bg" id="hero">
+      <div class="hero-text" data-aos="zoom-in" data-aos-mirror="true" data-aos-duration="500">
+        <div class="left" data-aos="fade-right" data-aos-mirror="true" data-aos-duration="700" data-aos-delay="500">
+          <p><span>HI, </span><span>I'M</span></p>
+        </div>
+        <h1 class="myname" data-text="KIERAN">KIERAN</h1>
+        <div class="right" data-aos="fade-left" data-aos-mirror="true" data-aos-duration="700" data-aos-delay="500">
+          <p><span>A </span><span>WEB </span><span>DEVELOPER</span></p>
+        </div>
+      </div>
+      <div
+        class="call-to-action"
+        data-aos="fade-up"
+        data-aos-mirror="true"
+        data-aos-duration="1000"
+        data-aos-delay="800"
+      >
+        <div class="explore">
+          <a href="#story">EXPLORE</a>
+        </div>
+        <div class="hire">
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="work scroll-bg" id="work">
-        <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
-        <div class="work-card">
-          <div class="work-row" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1000" data-aos-delay="400">
-            <div class="left">
-              <h2>O'Connor Drywall</h2>
-              <p>A website redesign for a UK based construction company, wanting an updated modern look that highlights their services and recent work.</p>
-              <p><span>In development</span></p>
-              <a href="https://www.oconnordrywall.com/" target="_blank">www.oconnordrywall.com</a>
-            </div>
-            <div class="right">
-              <img src="assets/oconnordrywall-thumb.png" alt="">
-            </div>
+    <section class="story">
+      <h1 id="story" class="scroll-bg" data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
+      <div class="story-card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="story-row">
+          <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">About Me</h2>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+            I am a British expatriate who has been living and working in China for over 10 years, during which I have
+            gained extensive knowledge of China's culture, traditions and people, along with many wonderful stories to
+            share.
+          </p>
+        </div>
+        <div class="story-row">
+          <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Web Skills</h2>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+            A self-taught web developer using HTML, CSS, SASS, Bootstrap, WebAPI's, JSON, JavaScript, GitHub and more.
+            Currently exploring the worlds of Figma Wireframes to Websites and Single Page Apps with ReactJS.
+          </p>
+        </div>
+        <div class="story-icons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <img src="assets/html5.png" alt="" />
+          <img src="assets/css3.png" alt="" />
+          <img src="assets/javascript.png" alt="" />
+          <img src="assets/github.png" alt="" />
+          <img src="assets/figma.png" alt="" />
+          <img src="assets/bootstrap.png" alt="" /> <img src="assets/react.png" alt="" />*
+        </div>
+        <div class="story-row">
+          <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Availability</h2>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+            I will be returning to England at the end of July 2022 and I am actively seeking a remote working position
+            until that time. Willing to consider office hours and relocation anywhere within the UK.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work scroll-bg" id="work">
+      <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
+      <h2 data-aos="zoom-in" data-aos-duration="1000">WORK</h2>
+      <div class="work-card">
+        <div class="work-row" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1000" data-aos-delay="400">
+          <div class="left">
+            <h2>O'Connor Drywall</h2>
+            <p>
+              A website redesign for a UK based construction company, wanting an updated modern look that highlights
+              their services and recent work.
+            </p>
+            <p><span>In development</span></p>
+            <a href="https://www.oconnordrywall.com/" target="_blank">www.oconnordrywall.com</a>
+            <a href="https://kierana.dev/ocd/" target="_blank">Demo: kierana.dev/ocd</a>
+          </div>
+          <div class="right">
+            <img src="assets/oconnordrywall-thumb.png" alt="" />
           </div>
         </div>
-        <div class="work-card">
-          <div class="work-row-2" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1000" data-aos-delay="800">
-            <div class="left">
-              <img src="assets/inoffensive-thumb.png" alt="">
-            </div>
-            <div class="right">
-              <h2>Inoffensive</h2>
-              <p>Full website design for an ecommerce company with strict requirements for its colour scheme, minimal content and to not use cookies.</p>
-              <p><span>Live</span></p>
-              <a href="https://www.inoffensive.co.uk/" target="_blank">www.inoffensive.co.uk</a>
-            </div>
+      </div>
+      <div class="work-card">
+        <div class="work-row-2" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="1000" data-aos-delay="800">
+          <div class="left">
+            <img src="assets/inoffensive-thumb.png" alt="" />
+          </div>
+          <div class="right">
+            <h2>Inoffensive</h2>
+            <p>
+              Simple website design for an ecommerce company with strict requirements for its colour scheme, minimal
+              content and GDPR configuration.
+            </p>
+            <p><span>Live</span></p>
+            <a href="https://www.inoffensive.co.uk/" target="_blank">www.inoffensive.co.uk</a>
           </div>
         </div>
-      </section>   
+      </div>
+    </section>
 
-      <section class="projects scroll-bg" id="projects">
-        <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
-        <div class="projects-card" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
-          <div class="project-item">
-            <div class="project-img">
-              <a href="assets/kawasaki-figma.png" target="_blank"><img src="./assets/kawasaki-thumb.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>Design concept for the Kawasaki.co.uk landing page.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/figma-32.png" alt="">
-            </div>
+    <section class="projects scroll-bg" id="projects">
+      <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
+      <h2 data-aos="zoom-in" data-aos-duration="1000">PROJECTS</h2>
+      <div class="projects-card" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
+        <div class="project-item">
+          <div class="project-img">
+            <a href="https://kierana.dev/ds-info/" target="_blank"><img src="./assets/proj_ds.png" alt="" /></a>
           </div>
-          <div class="project-item">
-            <div class="project-img">
-              <a href="assets/labyrinth-concept.png" target="_blank"><img src="./assets/labyrinth-thumb.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>Popular streaming platform content page redesign.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/figma-32.png" alt="">
-            </div>
+          <div class="project-text">
+            <h2>Death Stranding Fansite</h2>
+            <p>Using Fetch with static template data to update and change DOM content without reload.</p>
+            <p></p>
+            <a href="https://github.com/kiearm/ds-info/" target="_blank">GitHub Repository</a>
           </div>
-          <div class="project-item">
-            <div class="project-img">
-              <a href="https://kierana.dev/covid/" target="_blank"><img src="./assets/proj_covid.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>Covid-19 tracking application using external API data.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/html5-32.png" alt="">
-              <img src="assets/css3-32.png" alt="">
-              <img src="assets/javascript-32.png" alt="">
-              <img src="assets/react-32.png" alt="">
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-img">
-              <a href="https://kierana.dev/expenses/" target="_blank"><img src="./assets/proj_expenses.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>A personal expenses tracking application.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/html5-32.png" alt="">
-              <img src="assets/css3-32.png" alt="">
-              <img src="assets/javascript-32.png" alt="">
-              <img src="assets/react-32.png" alt="">
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-img">
-              <a href="https://kierana.dev/weather/" target="_blank"><img src="./assets/proj_weatherAPI.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>Current weather using geolocation and third-party API.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/html5-32.png" alt="">
-              <img src="assets/css3-32.png" alt="">
-              <img src="assets/javascript-32.png" alt="">
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-img">
-              <a href="https://kierana.dev/formv/" target="_blank"><img src="./assets/proj_form.png" alt=""></a>
-            </div>
-            <div class="project-text">
-              <p>JavaScript form validation example with CSS styling.</p>
-            </div>
-            <div class="project-icon">
-              <img src="assets/html5-32.png" alt="">
-              <img src="assets/css3-32.png" alt="">
-              <img src="assets/javascript-32.png" alt="">
-            </div>
+          <div class="project-icon">
+            <img src="assets/html5-32.png" alt="" />
+            <img src="assets/css3-32.png" alt="" />
+            <img src="assets/javascript-32.png" alt="" />
           </div>
         </div>
-      </section>
-
-      <section class="contact scroll-bg" id="contact">
-        <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
-        <div class="contact-section">
-          <div class="contact-left">
-            <div class="contact-info">
-              <h2 data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
-              <p id="contact-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">You can find me at the places listed below or send a message directly through the form. I have included a Google Maps link for those with curious minds and there are links to chat directly through WhatsApp and WeChat located in the corner of the page.</p>
-              <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Phone Number</h3>
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">+86 156 4892 5234 - Available between 4AM and 1PM GMT</p>
-              <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">Email Address</h3>
-              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">contact@kierana.dev</p>
-              <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">Current Location</h3>
-              <a data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600" href="https://www.google.com/maps/place/Ulanqab,+Inner+Mongolia,+China/@41.01792,113.0597859,26701m/data=!3m2!1e3!4b1!4m5!3m4!1s0x35fdb968191054a5:0x774f5ebf84210a51!8m2!3d40.994785!4d113.132585" target="_blank"><p>Wulanchabu, Inner Mongolia, China</p></a>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" class="contact-info-2">
-              <a href="https://github.com/KieArm" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-              <a href="https://wa.me/8615648925234?text=Portfolio%20Click" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
-              <a href="./assets/wcqr.png" target="_blank"><i id="button" class="fab fa-weixin fa-lg"></i></a>
-            </div>
+        <div class="project-item">
+          <div class="project-img">
+            <a href="https://kierana.dev/covid/" target="_blank"><img src="./assets/proj_covid.png" alt="" /></a>
           </div>
-          <div class="contact-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
-            <form target="_blank" action="https://formsubmit.co/555694a08b8d41d40d871cd76a606658" method="POST">
-              <div class="contact-form">
-                  <div class="form-row">
-                      <div class="form-col">
-                          <span>Name</span>
-                          <input autocomplete="new-password" type="text" name="name" class="form-control" required>
-                      </div>
-                      <div class="form-col">
-                          <span>Email</span>
-                          <input autocomplete="new-password" type="email" name="email" class="form-control" required>
-                      </div>
-                  </div>
-              </div>
-              <div class="contact-form">
+          <div class="project-text">
+            <h2>COVID-19 Tracking App</h2>
+            <p>Filtering World API data and using ChartJS to display dynamic charts.</p>
+            <a href="https://github.com/kiearm/covid/" target="_blank">GitHub Repository</a>
+          </div>
+          <div class="project-icon">
+            <img src="assets/html5-32.png" alt="" />
+            <img src="assets/css3-32.png" alt="" />
+            <img src="assets/javascript-32.png" alt="" />
+            <img src="assets/react-32.png" alt="" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-img">
+            <a href="https://kierana.dev/expenses/" target="_blank"><img src="./assets/proj_expenses.png" alt="" /></a>
+          </div>
+          <div class="project-text">
+            <h2>Personal Expenses App</h2>
+            <p>CRUD expenses project, converted from JavaScript to React.</p>
+            <a href="https://github.com/kiearm/expenses/" target="_blank">GitHub Repository</a>
+          </div>
+          <div class="project-icon">
+            <img src="assets/html5-32.png" alt="" />
+            <img src="assets/css3-32.png" alt="" />
+            <img src="assets/javascript-32.png" alt="" />
+            <img src="assets/react-32.png" alt="" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-img">
+            <a href="https://kierana.dev/weather/" target="_blank"><img src="./assets/proj_weatherAPI.png" alt="" /></a>
+          </div>
+          <div class="project-text">
+            <h2>OpenWeather API</h2>
+            <p>Displays the current weather using browser geolocation and openweather API data.</p>
+            <a href="https://github.com/kiearm/weather/" target="_blank">GitHub Repository</a>
+          </div>
+          <div class="project-icon">
+            <img src="assets/html5-32.png" alt="" />
+            <img src="assets/css3-32.png" alt="" />
+            <img src="assets/javascript-32.png" alt="" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-img">
+            <a href="https://kierana.dev/formv/" target="_blank"><img src="./assets/proj_form.png" alt="" /></a>
+          </div>
+          <div class="project-text">
+            <h2>Form Validation</h2>
+            <p>JavaScript client-side form validation example using regular expressions and CSS styling.</p>
+            <a href="https://github.com/kiearm/formv/" target="_blank">GitHub Repository</a>
+          </div>
+          <div class="project-icon">
+            <img src="assets/html5-32.png" alt="" />
+            <img src="assets/css3-32.png" alt="" />
+            <img src="assets/javascript-32.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact scroll-bg" id="contact">
+      <h1 data-aos="zoom-in" data-aos-duration="1000">------------------------------</h1>
+      <div class="contact-section">
+        <div class="contact-left">
+          <div class="contact-info">
+            <h2 data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
+            <p id="contact-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+              You can find me at the places listed below or send a message directly through the form. I have included a
+              Google Maps link for those with curious minds and there are links to chat directly through WhatsApp and
+              WeChat located in the corner of the page.
+            </p>
+            <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Phone Number</h3>
+            <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">+86 156 4892 5234 - 4AM - 1PM GMT</p>
+            <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Email Address</h3>
+            <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">contact@kierana.dev</p>
+            <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">Current Location</h3>
+            <a
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+              href="https://www.google.com/maps/place/Ulanqab,+Inner+Mongolia,+China/@41.01792,113.0597859,26701m/data=!3m2!1e3!4b1!4m5!3m4!1s0x35fdb968191054a5:0x774f5ebf84210a51!8m2!3d40.994785!4d113.132585"
+              target="_blank"
+              ><p>Wulanchabu, Inner Mongolia, China</p></a
+            >
+          </div>
+        </div>
+        <div class="contact-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1800">
+          <form target="_blank" action="https://formsubmit.co/555694a08b8d41d40d871cd76a606658" method="POST">
+            <div class="contact-form">
+              <div class="form-row">
                 <div class="form-col">
-                    <span>Message</span>
-                    <textarea class="form-control" name="message" rows="10" required></textarea>
+                  <span>Name</span>
+                  <input autocomplete="new-password" type="text" name="name" class="form-control" required />
+                </div>
+                <div class="form-col">
+                  <span>Email</span>
+                  <input autocomplete="new-password" type="email" name="email" class="form-control" required />
                 </div>
               </div>
-              <button type="submit" class="submit">SEND</button>
-            </form>
-          </div>
+            </div>
+            <div class="contact-form">
+              <div class="form-col">
+                <span>Message</span>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="submit">SEND</button>
+          </form>
         </div>
-      </section>
+      </div>
+    </section>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
