@@ -50,7 +50,8 @@ body {
 
 .navlink-wrapper {
   display: flex;
-  margin: 0 0 0 auto;
+  width: 100%;
+  justify-content: end;
 }
 
 .navbar-logo:hover {
@@ -151,6 +152,9 @@ body {
 
 // Fixed Social Icons
 .social-icons {
+  display: flex;
+  width: max-content;
+
   a {
     text-decoration: none;
     font-size: 1.3rem;
@@ -291,7 +295,31 @@ body {
   // Glitch Animation
   .myname {
     transform: scaleX(var(--scale, 1));
-    animation: glitch-p 11s infinite alternate;
+    animation: glitch-p 6s infinite alternate;
+    animation-timing-function: step-start;
+
+    @keyframes glitch-p {
+      17% {
+        transform: scaleX(0.87);
+        // --scale: 0.87; FireFox doesnt support this
+      }
+      31% {
+        transform: scaleX(1.1);
+        // --scale: 1.1;
+      }
+      37% {
+        transform: scaleX(1.3);
+        // --scale: 1.3;
+      }
+      47% {
+        transform: scaleX(0.91);
+        // --scale: 0.91;
+      }
+      87% {
+        transform: scaleX(1);
+        // --scale: 1.2;
+      }
+    }
 
     &::before,
     &::after {
@@ -313,8 +341,6 @@ body {
       transform: translateX(calc(var(--left) * 100%));
       // this helps to get rid of pixelization
       filter: drop-shadow(0 0 transparent);
-      // text-shadow: calc(var(--left) * -3em) 0 .02em rgba(235, 237, 241, 0.3),
-      //  calc(var(--left) * -6em) 0 .02em #333;
       text-shadow: calc(var(--left) * -3em) 0 0.02em #69be28, calc(var(--left) * -6em) 0 0.02em #ff00e1;
       background-color: transparent;
       clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
@@ -324,102 +350,84 @@ body {
       animation: glitch-b 2.7s infinite alternate-reverse;
     }
 
+    @keyframes glitch-b {
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        --top: 0;
+        --left: 0;
+      }
+      0% {
+        --v-height: 15%;
+        --top: 10;
+      }
+      20% {
+        --left: -0.005;
+      }
+      40% {
+        --left: -0.01;
+        --v-height: 17%;
+        --top: 3;
+      }
+      60% {
+        --left: -0.03;
+        --v-height: 35%;
+        --top: 6;
+      }
+      80% {
+        --left: -0.07;
+        --v-height: 5%;
+        --top: 8;
+      }
+      100% {
+        --left: -0.083;
+        --v-height: 30%;
+        --top: 1;
+      }
+    }
+
     &::after {
       animation: glitch-a 4.1s infinite alternate;
     }
-  }
-}
 
-@keyframes glitch-p {
-  17% {
-    --scale: 0.87;
-  }
-  31% {
-    --scale: 1.1;
-  }
-  37% {
-    --scale: 1.3;
-  }
-  47% {
-    --scale: 0.91;
-  }
-  87% {
-    --scale: 1;
-  }
-}
-
-@keyframes glitch-a {
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    --top: 0;
-    --left: 0;
-  }
-  0% {
-    --v-height: 15%;
-  }
-  20% {
-    --left: 0.005;
-  }
-  40% {
-    --left: 0.01;
-    --v-height: 20%;
-    --top: 3;
-  }
-  60% {
-    --left: 0.03;
-    --v-height: 25%;
-    --top: 6;
-  }
-  80% {
-    --left: 0.07;
-    --v-height: 5%;
-    --top: 8;
-  }
-  100% {
-    --left: 0.083;
-    --v-height: 30%;
-    --top: 1;
-  }
-}
-
-@keyframes glitch-b {
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    --top: 0;
-    --left: 0;
-  }
-  0% {
-    --v-height: 15%;
-    --top: 10;
-  }
-  20% {
-    --left: -0.005;
-  }
-  40% {
-    --left: -0.01;
-    --v-height: 17%;
-    --top: 3;
-  }
-  60% {
-    --left: -0.03;
-    --v-height: 35%;
-    --top: 6;
-  }
-  80% {
-    --left: -0.07;
-    --v-height: 5%;
-    --top: 8;
-  }
-  100% {
-    --left: -0.083;
-    --v-height: 30%;
-    --top: 1;
+    @keyframes glitch-a {
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        --top: 0;
+        --left: 0;
+      }
+      0% {
+        --v-height: 15%;
+      }
+      20% {
+        --left: 0.005;
+      }
+      40% {
+        --left: 0.01;
+        --v-height: 20%;
+        --top: 3;
+      }
+      60% {
+        --left: 0.03;
+        --v-height: 25%;
+        --top: 6;
+      }
+      80% {
+        --left: 0.07;
+        --v-height: 5%;
+        --top: 8;
+      }
+      100% {
+        --left: 0.083;
+        --v-height: 30%;
+        --top: 1;
+      }
+    }
   }
 }
 
@@ -546,7 +554,6 @@ body {
 }
 
 // Story section
-
 .story {
   display: flex;
   flex-direction: column;
@@ -680,12 +687,11 @@ body {
           transform: scale(1.2);
         }
 
-        @media only screen and (max-width: 1200px) {
-        }
-
         @media only screen and (max-width: 700px) {
           padding-left: 5px;
           padding-right: 5px;
+          height: 25px;
+          width: 25px;
         }
       }
     }
@@ -693,7 +699,6 @@ body {
 }
 
 // Work Section
-
 #work {
   display: flex;
   flex-direction: column;
@@ -773,6 +778,10 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   .work-card {
@@ -836,7 +845,7 @@ body {
       justify-content: space-between;
       padding: 20px 0;
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 800px) {
         flex-direction: column;
       }
 
@@ -848,7 +857,7 @@ body {
         max-width: 500px;
         padding-bottom: 10px;
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           max-width: 325px;
           margin: 0 auto;
         }
@@ -860,12 +869,12 @@ body {
       }
 
       .right {
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           margin: 0 auto;
         }
 
         img {
-          @media only screen and (max-width: 700px) {
+          @media only screen and (max-width: 800px) {
             width: 300px;
           }
         }
@@ -880,7 +889,7 @@ body {
       justify-content: space-between;
       padding: 20px 0;
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 800px) {
         flex-direction: column-reverse;
       }
 
@@ -892,7 +901,7 @@ body {
         max-width: 500px;
         padding-bottom: 10px;
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           max-width: 325px;
           margin: 0 auto;
         }
@@ -904,12 +913,12 @@ body {
       }
 
       .left {
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           margin: 0 auto;
         }
 
         img {
-          @media only screen and (max-width: 700px) {
+          @media only screen and (max-width: 800px) {
             width: 300px;
           }
         }
@@ -1017,13 +1026,16 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   .projects-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    padding: 50px 0;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 30px 0;
     width: 70%;
     height: auto;
     backdrop-filter: blur(2px) saturate(80%);
@@ -1035,20 +1047,16 @@ body {
     -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 750px) {
       width: 90%;
     }
 
     .project-item {
       display: grid;
-      grid-template-rows: max-content;
-      gap: 1rem;
       justify-content: center;
-      height: auto;
 
       .project-img {
-        display: flex;
-        justify-content: center;
+        place-self: center;
 
         img {
           width: 225px;
@@ -1148,7 +1156,6 @@ body {
 }
 
 // Contact section
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -1201,19 +1208,13 @@ body {
 .contact-section {
   display: flex;
   justify-content: center;
-  height: 80%;
+  height: max-content;
   width: 80%;
   color: white;
 
-  @media only screen and (max-width: 1200px) {
-    width: 90vh;
-    flex-direction: row;
-  }
-
   @media only screen and (max-width: 700px) {
-    height: 100vh;
-    width: 90vw;
     flex-direction: column;
+    height: 100vh;
   }
 
   .contact-form {
@@ -1229,14 +1230,11 @@ body {
     font-family: "Roboto", sans-serif;
     color: #ebedf1;
     width: 100%;
-    height: 70%;
+    height: max-content;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    @media only screen and (max-width: 700px) {
-      height: 100%;
-    }
+    padding-bottom: 20px;
 
     #contact-text {
       @media only screen and (max-width: 700px) {
@@ -1249,10 +1247,6 @@ body {
       flex-direction: column;
       width: 80%;
 
-      @media only screen and (max-width: 1200px) {
-        width: 85%;
-      }
-
       h2 {
         font-family: "Monoton";
         font-size: 3em;
@@ -1260,7 +1254,7 @@ body {
         margin: 0;
         padding-bottom: 10px;
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           font-size: 2rem;
         }
       }
@@ -1293,10 +1287,8 @@ body {
 
     .contact-info-2 {
       display: none;
-      @media only screen and (max-width: 1200px) {
-      }
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 400px) {
         display: flex;
       }
 
@@ -1318,14 +1310,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70%;
+    height: max-content;
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: 1200px) {
-    }
-
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -1365,7 +1354,7 @@ body {
   form {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    padding: 20px 0;
     width: 80%;
     align-items: center;
     justify-content: center;
@@ -1377,32 +1366,22 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-
-    @media only screen and (max-width: 1200px) {
-      width: 85%;
-    }
   }
 
   input {
     background: transparent;
     color: rgba(235, 237, 241, 1);
     font-family: "Roboto", sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
     height: 25px;
-
-    @media only screen and (max-width: 1200px) {
-      height: 40px;
-    }
   }
 
   textarea {
     background: transparent;
     color: rgba(235, 237, 241, 1);
     font-family: "Roboto", sans-serif;
-    width: 100%;
-    height: 60%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1440,7 +1419,6 @@ body {
 }
 
 // Popper Styling
-
 #tooltip {
   padding: 10px;
   display: none;
@@ -1451,7 +1429,6 @@ body {
 }
 
 // AutoFill Styling
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

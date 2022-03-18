@@ -52,7 +52,8 @@ body {
 
 .navlink-wrapper {
   display: flex;
-  margin: 0 0 0 auto;
+  width: 100%;
+  justify-content: end;
 }
 
 .navbar-logo:hover {
@@ -129,6 +130,10 @@ body {
   left: 0;
 }
 
+.social-icons {
+  display: flex;
+  width: max-content;
+}
 .social-icons a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -241,7 +246,25 @@ body {
 }
 #hero .myname {
   transform: scaleX(var(--scale, 1));
-  animation: glitch-p 11s infinite alternate;
+  animation: glitch-p 6s infinite alternate;
+  animation-timing-function: step-start;
+}
+@keyframes glitch-p {
+  17% {
+    transform: scaleX(0.87);
+  }
+  31% {
+    transform: scaleX(1.1);
+  }
+  37% {
+    transform: scaleX(1.3);
+  }
+  47% {
+    transform: scaleX(0.91);
+  }
+  87% {
+    transform: scaleX(1);
+  }
 }
 #hero .myname::before, #hero .myname::after {
   --f-size: 25;
@@ -266,59 +289,6 @@ body {
 }
 #hero .myname::before {
   animation: glitch-b 2.7s infinite alternate-reverse;
-}
-#hero .myname::after {
-  animation: glitch-a 4.1s infinite alternate;
-}
-
-@keyframes glitch-p {
-  17% {
-    --scale: 0.87;
-  }
-  31% {
-    --scale: 1.1;
-  }
-  37% {
-    --scale: 1.3;
-  }
-  47% {
-    --scale: 0.91;
-  }
-  87% {
-    --scale: 1;
-  }
-}
-@keyframes glitch-a {
-  10%, 30%, 50%, 70%, 90% {
-    --top: 0;
-    --left: 0;
-  }
-  0% {
-    --v-height: 15%;
-  }
-  20% {
-    --left: 0.005;
-  }
-  40% {
-    --left: 0.01;
-    --v-height: 20%;
-    --top: 3;
-  }
-  60% {
-    --left: 0.03;
-    --v-height: 25%;
-    --top: 6;
-  }
-  80% {
-    --left: 0.07;
-    --v-height: 5%;
-    --top: 8;
-  }
-  100% {
-    --left: 0.083;
-    --v-height: 30%;
-    --top: 1;
-  }
 }
 @keyframes glitch-b {
   10%, 30%, 50%, 70%, 90% {
@@ -353,6 +323,42 @@ body {
     --top: 1;
   }
 }
+#hero .myname::after {
+  animation: glitch-a 4.1s infinite alternate;
+}
+@keyframes glitch-a {
+  10%, 30%, 50%, 70%, 90% {
+    --top: 0;
+    --left: 0;
+  }
+  0% {
+    --v-height: 15%;
+  }
+  20% {
+    --left: 0.005;
+  }
+  40% {
+    --left: 0.01;
+    --v-height: 20%;
+    --top: 3;
+  }
+  60% {
+    --left: 0.03;
+    --v-height: 25%;
+    --top: 6;
+  }
+  80% {
+    --left: 0.07;
+    --v-height: 5%;
+    --top: 8;
+  }
+  100% {
+    --left: 0.083;
+    --v-height: 30%;
+    --top: 1;
+  }
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -553,6 +559,8 @@ body {
   .story .story-card .story-icons img {
     padding-left: 5px;
     padding-right: 5px;
+    height: 25px;
+    width: 25px;
   }
 }
 
@@ -601,6 +609,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+@media only screen and (max-width: 700px) {
+  #work h2 {
+    font-size: 3rem;
+  }
 }
 #work .work-card {
   display: flex;
@@ -663,7 +676,7 @@ body {
   justify-content: space-between;
   padding: 20px 0;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row {
     flex-direction: column;
   }
@@ -676,7 +689,7 @@ body {
   max-width: 500px;
   padding-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row .left {
     max-width: 325px;
     margin: 0 auto;
@@ -686,12 +699,12 @@ body {
   margin: 5px 0 0 0;
   color: #e83611;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row .right {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row .right img {
     width: 300px;
   }
@@ -704,7 +717,7 @@ body {
   justify-content: space-between;
   padding: 20px 0;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row-2 {
     flex-direction: column-reverse;
   }
@@ -717,7 +730,7 @@ body {
   max-width: 500px;
   padding-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row-2 .right {
     max-width: 325px;
     margin: 0 auto;
@@ -727,12 +740,12 @@ body {
   margin: 5px 0 0 0;
   color: #2a9a9f;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row-2 .left {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #work .work-card .work-row-2 .left img {
     width: 300px;
   }
@@ -800,11 +813,15 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media only screen and (max-width: 700px) {
+  #projects h2 {
+    font-size: 3rem;
+  }
+}
 #projects .projects-card {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  padding: 50px 0;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 30px 0;
   width: 70%;
   height: auto;
   backdrop-filter: blur(2px) saturate(80%);
@@ -816,21 +833,17 @@ body {
   -webkit-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 9px 30px 0px rgba(0, 0, 0, 0.75);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   #projects .projects-card {
     width: 90%;
   }
 }
 #projects .projects-card .project-item {
   display: grid;
-  grid-template-rows: max-content;
-  gap: 1rem;
   justify-content: center;
-  height: auto;
 }
 #projects .projects-card .project-item .project-img {
-  display: flex;
-  justify-content: center;
+  place-self: center;
 }
 #projects .projects-card .project-item .project-img img {
   width: 225px;
@@ -936,21 +949,14 @@ body {
 .contact-section {
   display: flex;
   justify-content: center;
-  height: 80%;
+  height: max-content;
   width: 80%;
   color: white;
 }
-@media only screen and (max-width: 1200px) {
-  .contact-section {
-    width: 90vh;
-    flex-direction: row;
-  }
-}
 @media only screen and (max-width: 700px) {
   .contact-section {
-    height: 100vh;
-    width: 90vw;
     flex-direction: column;
+    height: 100vh;
   }
 }
 .contact-section .contact-form {
@@ -965,15 +971,11 @@ body {
   font-family: "Roboto", sans-serif;
   color: #ebedf1;
   width: 100%;
-  height: 70%;
+  height: max-content;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-@media only screen and (max-width: 700px) {
-  .contact-section .contact-left {
-    height: 100%;
-  }
+  padding-bottom: 20px;
 }
 @media only screen and (max-width: 700px) {
   .contact-section .contact-left #contact-text {
@@ -985,11 +987,6 @@ body {
   flex-direction: column;
   width: 80%;
 }
-@media only screen and (max-width: 1200px) {
-  .contact-section .contact-left .contact-info {
-    width: 85%;
-  }
-}
 .contact-section .contact-left .contact-info h2 {
   font-family: "Monoton";
   font-size: 3em;
@@ -997,7 +994,7 @@ body {
   margin: 0;
   padding-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .contact-section .contact-left .contact-info h2 {
     font-size: 2rem;
   }
@@ -1029,7 +1026,7 @@ body {
 .contact-section .contact-left .contact-info-2 {
   display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 400px) {
   .contact-section .contact-left .contact-info-2 {
     display: flex;
   }
@@ -1048,11 +1045,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 70%;
+  height: max-content;
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 450px) {
   .contact-section .contact-right {
     display: none;
   }
@@ -1091,7 +1088,7 @@ body {
 .contact-section form {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 20px 0;
   width: 80%;
   align-items: center;
   justify-content: center;
@@ -1104,31 +1101,19 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
-@media only screen and (max-width: 1200px) {
-  .contact-section form {
-    width: 85%;
-  }
-}
 .contact-section input {
   background: transparent;
   color: #ebedf1;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
   height: 25px;
-}
-@media only screen and (max-width: 1200px) {
-  .contact-section input {
-    height: 40px;
-  }
 }
 .contact-section textarea {
   background: transparent;
   color: #ebedf1;
   font-family: "Roboto", sans-serif;
-  width: 100%;
-  height: 60%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .form-control {
