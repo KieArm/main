@@ -25,7 +25,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #111927;
-  background-image: radial-gradient(at 47% 33%, hsl(162.42, 0%, 28.999999999999996%) 0, transparent 59%),
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162.42, 0%, 28.999999999999996%) 0,
+      transparent 59%
+    ),
     radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
 }
 
@@ -74,7 +78,7 @@ body {
 
   .navbar-logo {
     font-size: 1.5rem;
-    font-family: "Monoton";
+    font-family: 'Monoton';
     font-weight: 400;
     text-decoration: none;
     color: #ebedf1;
@@ -100,7 +104,7 @@ body {
     padding-right: 10px;
     text-decoration: none;
     font-size: 1.25rem;
-    font-family: "Oswald";
+    font-family: 'Oswald';
 
     @media only screen and (max-width: 700px) {
       font-size: 0.9rem;
@@ -117,7 +121,7 @@ body {
   }
 
   a span::after {
-    content: "";
+    content: '';
     display: block;
     margin: auto;
     height: 2px;
@@ -245,7 +249,7 @@ body {
     padding-left: 100px;
     align-items: flex-start;
     justify-content: flex-start;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     font-size: 1.5em;
     color: rgba(235, 237, 241, 0.8);
 
@@ -263,7 +267,7 @@ body {
     padding-right: 150px;
     align-items: flex-end;
     justify-content: flex-end;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     font-size: 1.5em;
     color: rgba(235, 237, 241, 0.8);
 
@@ -281,7 +285,7 @@ body {
     font-size: 7em;
     font-weight: 400;
     letter-spacing: 0.3em;
-    font-family: "Monoton";
+    font-family: 'Monoton';
 
     @media only screen and (max-width: 1200px) {
       font-size: 5rem;
@@ -341,7 +345,8 @@ body {
       transform: translateX(calc(var(--left) * 100%));
       // this helps to get rid of pixelization
       filter: drop-shadow(0 0 transparent);
-      text-shadow: calc(var(--left) * -3em) 0 0.02em #69be28, calc(var(--left) * -6em) 0 0.02em #ff00e1;
+      text-shadow: calc(var(--left) * -3em) 0 0.02em #69be28,
+        calc(var(--left) * -6em) 0 0.02em #ff00e1;
       background-color: transparent;
       clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
     }
@@ -482,7 +487,7 @@ body {
   flex-direction: row;
 
   a {
-    font-family: "Oswald";
+    font-family: 'Oswald';
     font-size: 0.9rem;
     text-decoration: none;
     color: rgba(235, 237, 241, 0.9);
@@ -567,7 +572,7 @@ body {
     padding: 100px 0px;
     font-size: 4rem;
     font-weight: 400;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     background: linear-gradient(
       219deg,
       var(--color-1) 19%,
@@ -606,9 +611,13 @@ body {
     margin: 0 10px;
     font-size: 2rem;
     font-weight: 400;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     background: -moz-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
-    background: -webkit-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
+    background: -webkit-linear-gradient(
+      130deg,
+      rgba(19, 226, 218, 1) 0%,
+      rgba(144, 85, 255, 1) 100%
+    );
     background: -ms-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
     background: linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
     background-clip: text;
@@ -656,7 +665,7 @@ body {
       justify-content: center;
       margin: 0 20px;
       color: rgba(235, 237, 241, 0.8);
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 1.2rem;
 
@@ -718,7 +727,7 @@ body {
     color: #ebedf1;
     margin: 0;
     padding: 100px 0;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     background: linear-gradient(
       219deg,
       var(--color-1) 19%,
@@ -753,7 +762,7 @@ body {
 
   h2 {
     display: flex;
-    font-family: "Monoton";
+    font-family: 'Monoton';
     font-size: 5em;
     font-weight: 400;
     background: linear-gradient(
@@ -800,9 +809,17 @@ body {
       margin: 0 15px;
       font-size: 3rem;
       font-weight: 400;
-      font-family: "Oswald";
-      background: -moz-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
-      background: -webkit-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
+      font-family: 'Oswald';
+      background: -moz-linear-gradient(
+        130deg,
+        rgba(19, 226, 218, 1) 0%,
+        rgba(144, 85, 255, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        130deg,
+        rgba(19, 226, 218, 1) 0%,
+        rgba(144, 85, 255, 1) 100%
+      );
       background: -ms-linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
       background: linear-gradient(130deg, rgba(19, 226, 218, 1) 0%, rgba(144, 85, 255, 1) 100%);
       background-clip: text;
@@ -929,7 +946,7 @@ body {
       display: flex;
       margin: 0 20px;
       color: rgba(235, 237, 241, 0.8);
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 1.2rem;
 
@@ -942,7 +959,7 @@ body {
     a {
       text-decoration: none;
       margin: 0 20px;
-      font-family: "Oswald";
+      font-family: 'Oswald';
       font-weight: 400;
       font-size: 1.3rem;
       color: rgba(235, 237, 241, 0.8);
@@ -971,7 +988,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 100px 0;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     background: linear-gradient(
       219deg,
       var(--color-1) 19%,
@@ -1001,7 +1018,7 @@ body {
   }
 
   h2 {
-    font-family: "Monoton";
+    font-family: 'Monoton';
     font-size: 5em;
     font-weight: 400;
     background: linear-gradient(
@@ -1068,7 +1085,7 @@ body {
           transition: ease-in-out 0.4s;
 
           &:hover {
-            transform: scale(1.2);
+            transform: scale(1.5);
           }
         }
       }
@@ -1081,7 +1098,7 @@ body {
 
         h2 {
           color: rgba(235, 237, 241, 0.8);
-          font-family: "Roboto", sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-weight: 400;
           font-size: 1.125rem;
         }
@@ -1090,7 +1107,7 @@ body {
           display: flex;
           margin: 0;
           color: rgba(235, 237, 241, 0.8);
-          font-family: "Roboto", sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-weight: 300;
           font-size: 1rem;
 
@@ -1175,7 +1192,7 @@ body {
     font-weight: 300;
     margin: 0;
     padding: 100px 0;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     background: linear-gradient(
       219deg,
       var(--color-1) 19%,
@@ -1227,7 +1244,7 @@ body {
   .contact-left {
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #ebedf1;
     width: 100%;
     height: max-content;
@@ -1248,7 +1265,7 @@ body {
       width: 80%;
 
       h2 {
-        font-family: "Monoton";
+        font-family: 'Monoton';
         font-size: 3em;
         font-weight: 400;
         margin: 0;
@@ -1322,7 +1339,7 @@ body {
   button {
     cursor: pointer;
     font-size: 1em;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     letter-spacing: 0.1rem;
     color: rgba(235, 237, 241, 0.5);
     border: none;
@@ -1371,7 +1388,7 @@ body {
   input {
     background: transparent;
     color: rgba(235, 237, 241, 1);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
     width: 100%;
     height: 25px;
@@ -1380,7 +1397,7 @@ body {
   textarea {
     background: transparent;
     color: rgba(235, 237, 241, 1);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
   }
 }
@@ -1406,7 +1423,7 @@ body {
   width: 100%;
 
   span {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: #ebedf1;
     padding-bottom: 5px;

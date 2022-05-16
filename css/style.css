@@ -855,7 +855,7 @@ body {
   transition: ease-in-out 0.4s;
 }
 #projects .projects-card .project-item .project-img img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 #projects .projects-card .project-item .project-text {
   display: flex;
