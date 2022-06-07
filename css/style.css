@@ -413,6 +413,11 @@ body {
   border-radius: 5px;
   transition: all ease-in-out 0.5s;
 }
+@media only screen and (max-width: 700px) {
+  .call-to-action .explore {
+    margin: 10px;
+  }
+}
 .call-to-action .explore:hover {
   background: linear-gradient(219deg, var(--color-1) 19%, var(--color-2) 20%, var(--color-2) 39%, var(--color-3) 40%, var(--color-3) 59%, var(--color-4) 60%, var(--color-4) 79%, var(--color-5) 80%);
   cursor: pointer;
@@ -431,6 +436,11 @@ body {
   clip-path: polygon(20% 0, 100% 0, 100% 50%, 80% 100%, 0 100%, 0 50%);
   border-radius: 5px;
   transition: all ease-in-out 0.5s;
+}
+@media only screen and (max-width: 700px) {
+  .call-to-action .hire {
+    margin: 10px;
+  }
 }
 .call-to-action .hire:hover {
   background: linear-gradient(219deg, var(--color-1) 19%, var(--color-2) 20%, var(--color-2) 39%, var(--color-3) 40%, var(--color-3) 59%, var(--color-4) 60%, var(--color-4) 79%, var(--color-5) 80%);
@@ -547,6 +557,12 @@ body {
   color: rgba(235, 237, 241, 0.8);
   padding: 0;
   margin: 0;
+}
+@media only screen and (max-width: 700px) {
+  .story .story-card .story-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .story .story-card .story-icons img {
   padding: 10px 10px 0px 10px;
@@ -1172,6 +1188,10 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 30px transparent inset !important;
   box-shadow: 0 0 0 30px transparent inset !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+#hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
